@@ -22,7 +22,7 @@
 
 const { callbackify } = require('util');
 var _ = require('underscore');
-var errors = require('web3-core-helpers').errors;
+var errors = require('@sipc/web3-core-helpers').errors;
 var Jsonrpc = require('./jsonrpc.js');
 var BatchManager = require('./batch.js');
 var givenProvider = require('./givenProvider.js');
