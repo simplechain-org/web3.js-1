@@ -18,5 +18,6 @@
         "web3-providers-http": "1.3.4",
         "web3-providers-ipc": "1.3.4",
         "web3-providers-ws": "1.3.4"
-    }
+    },
+    "gitHead": "c8e5c20f1b5b133f3ef0445961fb9cfbe03e9f89"
 }

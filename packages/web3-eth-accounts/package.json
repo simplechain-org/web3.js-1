@@ -29,5 +29,6 @@
     "devDependencies": {
         "dtslint": "^3.4.1",
         "typescript": "^3.9.5"
-    }
+    },
+    "gitHead": "c8e5c20f1b5b133f3ef0445961fb9cfbe03e9f89"
 }
