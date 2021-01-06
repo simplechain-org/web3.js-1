@@ -20,7 +20,7 @@
  * @date 2017
  */
 
-const requestManager = require("web3-core-requestmanager");
+const requestManager = require("@sipc/web3-core-requestmanager");
 const extend = require("./extend");
 
 const packageInit = (pkg, args) => {
