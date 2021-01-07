@@ -25,6 +25,7 @@ import { Personal } from '@sipc/web3-eth-personal';
 import { Network } from '@sipc/web3-net';
 import { Shh } from '@sipc/web3-shh';
 import { Utils } from '@sipc/web3-utils';
+import {Cross} from "@sipc/web3-cross";
 
 export default class Web3 {
     constructor();
@@ -45,6 +46,7 @@ export default class Web3 {
     eth: Eth;
     shh: Shh;
     bzz: Bzz;
+    cross: Cross;
     version: string;
     static readonly version: string;
     static readonly utils: Utils;
@@ -57,4 +59,5 @@ export interface Modules {
     Personal: new (provider: provider, net: net.Socket) => Personal;
     Shh: new (provider: provider, net: net.Socket) => Shh;
     Bzz: new (provider: provider) => Bzz;
+    Cross: new (provider: provider, net: net.Socket) => Cross;
 }

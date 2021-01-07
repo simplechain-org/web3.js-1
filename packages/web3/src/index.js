@@ -36,6 +36,7 @@ var Personal = require('@sipc/web3-eth-personal');
 var Shh = require('@sipc/web3-shh');
 var Bzz = require('@sipc/web3-bzz');
 var utils = require('@sipc/web3-utils');
+var Cross = require('@sipc/web3-cross');
 
 var Web3 = function Web3() {
     var _this = this;
@@ -49,6 +50,7 @@ var Web3 = function Web3() {
     this.eth = new Eth(this);
     this.shh = new Shh(this);
     this.bzz = new Bzz(this);
+    this.cross = new Cross(this)
 
     // overwrite package setProvider
     var setProvider = this.setProvider;
@@ -57,6 +59,7 @@ var Web3 = function Web3() {
         setProvider.apply(_this, arguments);
 
         _this.eth.setRequestManager(_this._requestManager);
+        _this.cross.setRequestManager(_this._requestManager);
         _this.shh.setRequestManager(_this._requestManager);
         _this.bzz.setProvider(provider);
 
@@ -71,7 +74,8 @@ Web3.modules = {
     Net: Net,
     Personal: Personal,
     Shh: Shh,
-    Bzz: Bzz
+    Bzz: Bzz,
+    Cross: Cross
 };
 
 core.addProviders(Web3);
