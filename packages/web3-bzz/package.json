@@ -1,6 +1,6 @@
 {
     "name": "@sipc/web3-bzz",
-    "version": "1.3.27",
+    "version": "1.3.28",
     "description": "sipc 3.28  Web3 module to interact with the Swarm network.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-bzz",
     "license": "LGPL-3.0",
