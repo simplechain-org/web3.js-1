@@ -17,6 +17,7 @@
         "@sipc/web3-core": "1.3.9",
         "@sipc/web3-core-helpers": "1.3.9",
         "@sipc/web3-core-promievent": "1.3.9",
+        "@sipc/web3-eth": "^1.3.9",
         "@sipc/web3-eth-abi": "1.3.9",
         "@sipc/web3-eth-contract": "1.3.9",
         "@sipc/web3-utils": "1.3.9",
