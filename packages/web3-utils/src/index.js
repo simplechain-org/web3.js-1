@@ -298,12 +298,16 @@ var toChecksumAddress = function (address) {
 
     if(!/^(0x|Si|si|SI|sI)?[0-9a-f]{40}$/i.test(address))
         throw new Error('Given address "'+ address +'" is not a valid Ethereum address.');
-
-
-    address = address.toLowerCase().replace(/^0x/i,'');
-    address = address.toLowerCase().replace(/^si/i,'');
+    var checksumAddress = '';
+    if (/^(0x)?[0-9a-f]{40}$/i.test(address)) {
+        checksumAddress = '0x';
+    }
+    if (/^(Si|si|SI|sI)?[0-9a-f]{40}$/i.test(address)) {
+        checksumAddress = 'Si';
+    }
+    address = address.toLowerCase().replace(/^0x/i, '');
+    address = address.toLowerCase().replace(/^si/i, '');
     var addressHash = utils.sha3(address).replace(/^0x/i,'');
-    var checksumAddress = 'Si';
 
     for (var i = 0; i < address.length; i++ ) {
         // If ith character is 8 to f then make it uppercase
