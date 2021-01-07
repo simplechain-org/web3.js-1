@@ -296,12 +296,13 @@ var toWei = function(number, unit) {
 var toChecksumAddress = function (address) {
     if (typeof address === 'undefined') return '';
 
-    if(!/^(0x)?[0-9a-f]{40}$/i.test(address))
+    if(!/^(0x|Si|si)?[0-9a-f]{40}$/i.test(address))
         throw new Error('Given address "'+ address +'" is not a valid Ethereum address.');
 
 
 
     address = address.toLowerCase().replace(/^0x/i,'');
+    address = address.toLowerCase().replace(/si/i,'');
     var addressHash = utils.sha3(address).replace(/^0x/i,'');
     var checksumAddress = '0x';
 
@@ -352,7 +353,7 @@ var compareBlockNumbers = function(a, b) {
             return 1;
         } else {
             // b !== ("pending" OR "latest"), thus a > b
-            return -1 
+            return -1
         }
     } else if (a == "pending") {
         // b (== OR <) "latest", thus a > b
