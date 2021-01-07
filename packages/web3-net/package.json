@@ -1,6 +1,6 @@
 {
     "name": "@sipc/web3-net",
-    "version": "1.3.23",
+    "version": "1.3.24",
     "description": "Web3 module to interact with the Ethereum nodes networking properties.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-net",
     "license": "LGPL-3.0",
@@ -14,9 +14,9 @@
     },
     "main": "lib/index.js",
     "dependencies": {
-        "@sipc/web3-core": "1.3.23",
-        "@sipc/web3-core-method": "1.3.23",
-        "@sipc/web3-utils": "1.3.23"
+        "@sipc/web3-core": "1.3.24",
+        "@sipc/web3-core-method": "1.3.24",
+        "@sipc/web3-utils": "1.3.24"
     },
     "devDependencies": {
         "dtslint": "^3.4.1",
