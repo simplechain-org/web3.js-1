@@ -110,6 +110,9 @@ var isAddress = function (address) {
 var checkAddressChecksum = function (address) {
     // Check each case
     address = address.replace(/^0x/i,'');
+    if (/^(Si)?[0-9a-f]{40}$/i.test(address)) {
+        address = address.replace(/^Si/i,'');
+    }
     var addressHash = sha3(address.toLowerCase()).replace(/^0x/i,'');
 
     for (var i = 0; i < 40; i++ ) {
