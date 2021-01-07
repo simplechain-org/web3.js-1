@@ -1,6 +1,6 @@
 {
     "name": "@sipc/web3-eth2-beacon",
-    "version": "1.3.10",
+    "version": "1.3.21",
     "description": "sipc 9 Web3 ETH2 Beacon chain API wrappers.",
     "repository": "https://github.com/ethereum/web3.js/tree/1.x/packages/web3-eth2-beacon",
     "license": "LGPL-3.0",
@@ -15,7 +15,7 @@
     },
     "main": "lib/index.js",
     "dependencies": {
-        "@sipc/web3-eth2-base": "1.3.9"
+        "@sipc/web3-eth2-base": "1.3.21"
     },
     "devDependencies": {
         "@chainsafe/lodestar-types": "^0.11.0",
