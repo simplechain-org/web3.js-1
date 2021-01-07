@@ -1,6 +1,6 @@
 {
     "name": "@sipc/web3",
-    "version": "1.3.25",
+    "version": "1.3.26",
     "description": "Ethereum JavaScript API",
     "repository": "https://github.com/ethereum/web3.js",
     "license": "LGPL-3.0",
@@ -49,14 +49,14 @@
         }
     ],
     "dependencies": {
-        "@sipc/web3-bzz": "1.3.25",
-        "@sipc/web3-core": "1.3.25",
+        "@sipc/web3-bzz": "1.3.26",
+        "@sipc/web3-core": "1.3.26",
         "@sipc/web3-cross": "1.3.23",
-        "@sipc/web3-eth": "1.3.25",
-        "@sipc/web3-eth-personal": "1.3.25",
-        "@sipc/web3-net": "1.3.25",
-        "@sipc/web3-shh": "1.3.25",
-        "@sipc/web3-utils": "1.3.25"
+        "@sipc/web3-eth": "1.3.26",
+        "@sipc/web3-eth-personal": "1.3.26",
+        "@sipc/web3-net": "1.3.26",
+        "@sipc/web3-shh": "1.3.26",
+        "@sipc/web3-utils": "1.3.26"
     },
     "devDependencies": {
         "@types/node": "^12.12.6",
