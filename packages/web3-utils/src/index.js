@@ -302,7 +302,6 @@ var toChecksumAddress = function (address) {
 
 
     address = address.toLowerCase().replace(/^0x/i,'');
-    address = address.toLowerCase().replace(/si/i,'');
     var addressHash = utils.sha3(address).replace(/^0x/i,'');
     var checksumAddress = '0x';
 
