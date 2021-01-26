@@ -1,6 +1,6 @@
 {
     "name": "@sipc/web3-cross",
-    "version": "1.3.23",
+    "version": "1.3.30",
     "description": "sipc 3.30 Web3 module to interact with the simpleChain blockchain and cross api.",
     "license": "LGPL-3.0",
     "engines": {
