@@ -528,6 +528,11 @@ Contract.prototype._encodeMethodABI = function _encodeMethodABI() {
             }
             return _.isArray(json.inputs) ? json.inputs : [];
         }).map(function (inputs) {
+            inputs.forEach((ele, i) => {
+                if (ele.type === 'address') {
+                    args[i] = args[i].replace('Si', '0x');
+                }
+            })
             return abi.encodeParameters(inputs, args).replace('0x','');
         })[0] || '';
 

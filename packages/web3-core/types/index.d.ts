@@ -27,7 +27,7 @@ import {
     WebsocketProviderOptions,
     JsonRpcPayload,
     JsonRpcResponse
-} from 'web3-core-helpers';
+} from '@sipc/web3-core-helpers';
 import { Method } from '@sipc/web3-core-method';
 import BN = require('bn.js');
 import BigNumber from 'bignumber.js';

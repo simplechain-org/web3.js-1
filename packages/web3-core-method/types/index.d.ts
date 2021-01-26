@@ -17,7 +17,7 @@
  * @date 2018
  */
 
-import {JsonRpcPayload} from 'web3-core-helpers';
+import {JsonRpcPayload} from '@sipc/web3-core-helpers';
 
 export interface Method {
     name: string;
